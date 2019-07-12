@@ -1,6 +1,11 @@
 pipeline {
     agent LINUXNODE
     stages{
+        stage ('Checkout"){
+            steps{
+            checkout scm
+            }
+        }
         stage('TerraformPlan'){
             steps { 
                 powershell "teraform init"
