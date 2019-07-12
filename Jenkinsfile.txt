@@ -1,3 +1,4 @@
+Jenkinsfile(Delcarative Pipeline)
 pipeline {
     agent LINUXNODE
     stages{
