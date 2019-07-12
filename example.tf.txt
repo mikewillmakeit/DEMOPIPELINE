@@ -5,6 +5,8 @@ provider "aws" {
 
 resource "aws_instance" "example" {
     ami = "ami-0781cf90f9cef3437"
-    instance_type "t2.micro"
+    instance_type = "t2.micro"
+    "key_name" = "mike"
+    "security_groups" = "launch-wizard-1"
 }
 }

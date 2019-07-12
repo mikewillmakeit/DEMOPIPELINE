@@ -1,0 +1,12 @@
+pipeline {
+    agent LINUXNODE
+    stages{
+        stage('TerraformPlan'){
+            steps { 
+                powershell "teraform init"
+                powershell "terraform apply -state=path /example.tf" 
+            }
+        stage('Pester Test')   
+        }
+    }
+}
