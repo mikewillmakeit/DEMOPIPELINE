@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Testing') {
       steps {
-        sh 'Invoke-Pester -Path .\\ScriptsTests\\'
+        powershell '.\\ScriptsTests'
       }
     }
   }
