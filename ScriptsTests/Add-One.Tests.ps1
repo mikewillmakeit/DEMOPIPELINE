@@ -1,5 +1,5 @@
 ## Ensure the function is available
-.\Add-One.ps1
+C:\jenkins\workspace\DEMOPipeline_master\ScriptsTests\Add-One.ps1
 
 describe 'Add-One' {
     $TestNumber = 1
