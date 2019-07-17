@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'WindowsNode'
-    }
-
-  }
+  agent none
   stages {
     stage('Testing') {
       steps {
