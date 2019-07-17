@@ -12,7 +12,10 @@ pipeline {
                 powershell "teraform init"
                 powershell "terraform apply -state=path /example.tf" 
             }
-        stage('Pester Test')   
+        stage('Pester Test')
+            steps { 
+                Invoke-Pester /documents/exampletests $_
+            }
         }
     }
 }
