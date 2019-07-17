@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Testing') {
       steps {
-        sh 'Invoke-Pester -Path C:\\jenkins\\ScriptsTests\\'
+        sh 'Invoke-Pester -Path C:\\jenkins\\workspace\\DEMO_master\\ScriptsTests\\'
       }
     }
   }
