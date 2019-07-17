@@ -1,5 +1,5 @@
 ## Ensure the function is available
-. .\Add-One.ps1
+.\Add-One.ps1
 
 describe 'Add-One' {
     $TestNumber = 1
