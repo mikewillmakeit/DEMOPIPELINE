@@ -9,7 +9,7 @@ pipeline {
     stage('Testing') {
       steps {
         powershell 'Invoke-Pester -Path .\\ScriptsTests'
-        powershell './ScriptAnalyzerFunction'
+        powershell './ScriptsTests/ScriptAnalyzerFunction'
       }
     }
   }
