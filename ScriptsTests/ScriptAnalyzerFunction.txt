@@ -1,0 +1,2 @@
+$files = Get-ChildItem ./ScriptsTests
+foreach ($file in $files) {Invoke-ScriptAnalyzer -Path "./($file)"}
