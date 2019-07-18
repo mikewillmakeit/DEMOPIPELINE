@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Packaging') {
       steps {
-        powershell './packaging/chocolateypackageandpush'
+        powershell './packaging/chocolateypackageandpush.ps1'
       }
     }
   }
