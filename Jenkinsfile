@@ -12,5 +12,10 @@ pipeline {
         powershell './ScriptsTests/ScriptAnalyzerFunction'
       }
     }
+    stage('Packaging') {
+      steps {
+        powershell './packaging/chocolateypackageandpush'
+      }
+    }
   }
 }
