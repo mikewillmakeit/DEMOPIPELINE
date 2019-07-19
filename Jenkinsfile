@@ -10,7 +10,6 @@ pipeline {
       steps {
         powershell 'Invoke-Pester -Path .\\ScriptsTests'
         powershell './ScriptsTests/ScriptAnalyzerFunction'
-        powershell 'Rename-Item -Path ".\\ScriptsTests\\Add-One.ps1" -NewName "Add-One.psm1"'
       }
     }
     stage('Packaging') {
