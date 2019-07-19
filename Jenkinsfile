@@ -15,7 +15,7 @@ pipeline {
     stage('Packaging') {
       steps {
         powershell './nuget pack'
-        powershell 'choco push ./ScriptsTests/package.1.0.0.nupkg --source="http://13.59.44.78/chocolatey"  -apikey chocolateyrocks -force'
+        powershell 'choco push ./package.1.0.0.nupkg --source="http://13.59.44.78/chocolatey"  -apikey chocolateyrocks -force'
       }
     }
   }
